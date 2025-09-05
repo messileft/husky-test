@@ -1,0 +1,26 @@
+.guru-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.guru-item {
+  text-align: center;
+}
+
+.guru-photo {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%; /* perfect round */
+  border: 3px solid #f1c40f; /* optional golden ring */
+}
+
+.guru-name {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
