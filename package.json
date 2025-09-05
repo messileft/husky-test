@@ -17,10 +17,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "npm run lint:check && react-scripts build",
+    "build:force": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src/",
+    "lint:check": "eslint src/ --max-warnings 0",
     "lint:fix": "eslint src/ --fix",
     "prepare": "husky"
   },
@@ -50,8 +52,7 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx}": [
-      "eslint --fix",
-      "git add"
+      "eslint --max-warnings 0"
     ]
   }
 }

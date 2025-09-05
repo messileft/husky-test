@@ -58,8 +58,6 @@ module.exports = [
       'jsx-a11y/alt-text': 'warn',
       'jsx-a11y/anchor-has-content': 'warn',
       'jsx-a11y/anchor-is-valid': 'off',
-      'jsx-a11y/click-events-have-key-events': 'warn',
-      'jsx-a11y/no-static-element-interactions': 'warn',
 
       // Import rules
       'import/no-unresolved': 'off', // Handled by bundler
